@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h1>Internship Portal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="student_register.html">Student Register</a>
+      <a href="company_register.html">Company Register</a>
+      <a href="internships.html">Internships</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form id="studentForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="college">College/University</label>
+      <input type="text" id="college" name="college" required />
+
+      <label for="degree">Degree / Course</label>
+      <input type="text" id="degree" name="degree" required />
+
+      <label for="experience">Work Experience (if any)</label>
+      <textarea id="experience" name="experience" rows="4"></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+    <div id="responseMessage"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Internship Portal | Contact: your-email@example.com</p>
+    <p>Address: Your City, Your State, India</p>
+  </footer>
+
+  <script src="student.js"></script>
+</body>
+</html>
